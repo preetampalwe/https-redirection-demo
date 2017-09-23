@@ -1,0 +1,9 @@
+---
+applications:
+- name: https-redirection-demo
+  memory: 256M
+  instances: 1
+  buildpack: java_buildpack
+  host: https-redirection-demo
+  path: target/https-redirection-demo-0.1.0.jar
+  

@@ -1,0 +1,18 @@
+security:
+  basic:
+    enabled: false
+  require-ssl: true
+  
+server:
+  use-forward-headers: true
+  tomcat:
+    remote-ip-header: x-forwarded-for
+    protocol-header: x-forwarded-proto
+    
+logging:
+  level:
+    root: warn
+    com.mycompany: debug
+#    org.apache: debug
+#    org.springframework: debug
+    
